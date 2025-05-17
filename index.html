@@ -1,27 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreLink</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoreLink - PC Builder</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="navbar">
+  <nav class="navbar">
     <h1>CoreLink</h1>
     <div class="nav-tabs">
-      <button onclick="showSection('processors')">Processors</button>
-      <button onclick="showSection('ram')">RAM</button>
-      <button onclick="showSection('storage')">Storage</button>
-      <button onclick="showSection('gpus')">GPUs</button>
-      <button onclick="showSection('budget')">Budget Builds</button>
+      <button data-section="budget">Budget</button>
+      <button data-section="processors">Processors</button>
+      <button data-section="ram">RAM</button>
+      <button data-section="storage">Storage</button>
+      <button data-section="gpu">GPU</button>
     </div>
-  </div>
+  </nav>
 
   <div class="main-content">
-    <div id="filters">Filters will go here</div>
-    <div id="content">Welcome to CoreLink. Select a tab to view products.</div>
+    <aside id="filters">
+      <h3>Filters</h3>
+      <p>(Coming Soon)</p>
+    </aside>
+    <section id="content">
+      <p>Select a section above to start browsing.</p>
+    </section>
   </div>
 
   <script src="script.js"></script>
