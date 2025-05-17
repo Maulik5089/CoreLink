@@ -1,115 +1,40 @@
-{
-  "processors": [
+[
     {
-      "id": "cpu1",
-      "name": "Intel Core i5-10400F",
-      "price": 12500,
-      "specs": "6 Cores, 12 Threads, 2.9GHz Base",
-      "socket": "LGA1200",
-      "condition": "new",
-      "image": "images/i5-10400f.jpg"
+        "id": "cpu1",
+        "name": "Intel Core i5 10400F",
+        "category": "CPU",
+        "price": 9000,
+        "condition": "new",
+        "socket": "LGA1200",
+        "specs": "6 cores, 12 threads, 2.9 GHz base",
+        "image": "images/cpu1.jpg"
     },
     {
-      "id": "cpu2",
-      "name": "Intel Core i5-3470",
-      "price": 2200,
-      "specs": "4 Cores, 4 Threads, 3.2GHz",
-      "socket": "LGA1155",
-      "condition": "refurbished",
-      "image": "images/i5-3470.jpg"
-    }
-  ],
-  "motherboards": [
-    {
-      "id": "mb1",
-      "name": "Gigabyte H410M",
-      "price": 6200,
-      "specs": "Micro-ATX, LGA1200, DDR4",
-      "supportedSockets": ["LGA1200"],
-      "supportedRamTypes": ["DDR4"],
-      "condition": "new",
-      "image": "images/h410m.jpg"
+        "id": "mb1",
+        "name": "ASUS Prime B460M-A",
+        "category": "Motherboard",
+        "price": 7000,
+        "condition": "new",
+        "socket": "LGA1200",
+        "specs": "Micro ATX, DDR4, SATA, NVMe",
+        "image": "images/mb1.jpg"
     },
     {
-      "id": "mb2",
-      "name": "Consistent H61",
-      "price": 1150,
-      "specs": "ATX, LGA1155, DDR3",
-      "supportedSockets": ["LGA1155"],
-      "supportedRamTypes": ["DDR3"],
-      "condition": "refurbished",
-      "image": "images/h61.jpg"
-    }
-  ],
-  "ram": [
-    {
-      "id": "ram1",
-      "name": "Corsair Vengeance 8GB DDR4",
-      "price": 2200,
-      "specs": "DDR4, 3200MHz",
-      "type": "DDR4",
-      "condition": "new",
-      "image": "images/ddr4-8gb.jpg"
+        "id": "ram1",
+        "name": "Corsair Vengeance LPX 8GB DDR4",
+        "category": "RAM",
+        "price": 3200,
+        "condition": "new",
+        "specs": "DDR4 3200MHz",
+        "image": "images/ram1.jpg"
     },
     {
-      "id": "ram2",
-      "name": "Kingston 8GB DDR3",
-      "price": 1000,
-      "specs": "DDR3, 1600MHz",
-      "type": "DDR3",
-      "condition": "refurbished",
-      "image": "images/ddr3-8gb.jpg"
+        "id": "ram2",
+        "name": "Kingston 8GB DDR3 Refurbished",
+        "category": "RAM",
+        "price": 1500,
+        "condition": "refurbished",
+        "specs": "DDR3 1600MHz",
+        "image": "images/ram2.jpg"
     }
-  ],
-  "storage": [
-    {
-      "id": "storage1",
-      "name": "Zebronics 256GB NVMe",
-      "price": 1450,
-      "specs": "NVMe M.2 SSD",
-      "type": "NVMe",
-      "condition": "new",
-      "image": "images/zeb-nvme.jpg"
-    },
-    {
-      "id": "storage2",
-      "name": "WD Blue 500GB HDD",
-      "price": 900,
-      "specs": "3.5\", 7200RPM, SATA",
-      "type": "SATA",
-      "condition": "refurbished",
-      "image": "images/wd-hdd.jpg"
-    }
-  ],
-  "gpu": [
-    {
-      "id": "gpu1",
-      "name": "Zotac GT 1030",
-      "price": 5600,
-      "specs": "2GB GDDR5, Low Profile",
-      "condition": "new",
-      "image": "images/gt1030.jpg"
-    }
-  ],
-  "psu": [
-    {
-      "id": "psu1",
-      "name": "Corsair CV450",
-      "price": 2400,
-      "specs": "450W, 80+ Bronze",
-      "watts": 450,
-      "condition": "new",
-      "image": "images/cv450.jpg"
-    }
-  ],
-  "cabinets": [
-    {
-      "id": "cab1",
-      "name": "Zebronics Zeb-Cronus",
-      "price": 3200,
-      "specs": "ATX, RGB Fans",
-      "condition": "new",
-      "image": "images/zeb-cronus.jpg"
-    }
-  ]
-}
+]
