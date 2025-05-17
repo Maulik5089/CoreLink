@@ -1,30 +1,107 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoreLink – Build Your PC</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CoreLink - PC Builder India</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">CoreLink</div>
-    <div class="nav-tabs">
-      <button onclick="showSection('home')">Home</button>
-      <button onclick="showSection('budget')">Budget Build</button>
-      <button onclick="showSection('Processors')">Processors</button>
-      <button onclick="showSection('RAM')">RAM</button>
-      <button onclick="showSection('Storage')">Storage</button>
-      <button onclick="showSection('GPU')">GPU</button>
-      <button onclick="showSection('Cart')">Cart</button>
-    </div>
-  </div>  <div class="main-content">
-    <div id="filters">
-      <h3>Filters</h3>
-      <label><input type="checkbox" id="refurbishedToggle" onchange="applyFilters()"> Include Refurbished</label><br>
-      <label><input type="checkbox" id="compatibilityToggle" onchange="applyFilters()"> Show Compatible Only</label>
-    </div>
-    <div id="content">
-      <!-- Dynamic Content Goes Here -->
-    </div>
-  </div>  <script src="script.js"></script></body>
+  <header>
+    <nav id="top-nav">
+      <div class="logo">CoreLink</div>
+      <ul class="nav-links">
+        <li data-category="all" class="active">All</li>
+        <li data-category="processor">Processors</li>
+        <li data-category="ram">RAM</li>
+        <li data-category="storage">Storage</li>
+        <li data-category="gpu">GPUs</li>
+        <li data-category="motherboard">Motherboards</li>
+        <li data-category="psu">PSUs</li>
+        <li data-category="cabinet">Cabinets</li>
+        <li data-category="monitor">Monitors</li>
+        <li data-category="peripheral">Peripherals</li>
+        <li id="budget-build-tab">Budget Builds</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <aside id="filter-sidebar" class="collapsed">
+      <h2>Filters</h2>
+      <div class="filter-group">
+        <label>
+          <input type="checkbox" id="filter-refurbished" />
+          Include Refurbished
+        </label>
+      </div>
+      <div class="filter-group">
+        <label>Budget Range</label>
+        <select id="filter-budget">
+          <option value="all">All</option>
+          <option value="5000-10000">₹5,000–₹10,000</option>
+          <option value="11000-25000">₹11,000–₹25,000</option>
+          <option value="26000-50000">₹26,000–₹50,000</option>
+          <option value="51000+">₹51,000+</option>
+        </select>
+      </div>
+    </aside>
+
+    <section id="product-section">
+      <div id="products-container" class="products-grid"></div>
+    </section>
+
+    <section id="budget-build-section" class="hidden">
+      <h2>Budget Build Suggestions</h2>
+      <form id="budget-build-form">
+        <label for="budget-range">Select Budget Range:</label>
+        <select id="budget-range" required>
+          <option value="">Select</option>
+          <option value="5000-10000">₹5,000–₹10,000</option>
+          <option value="11000-25000">₹11,000–₹25,000</option>
+          <option value="26000-50000">₹26,000–₹50,000</option>
+          <option value="51000+">₹51,000+</option>
+        </select>
+
+        <label for="use-case">Use Case:</label>
+        <select id="use-case" required>
+          <option value="">Select</option>
+          <option value="office">Office</option>
+          <option value="gaming">Gaming</option>
+          <option value="editing">Editing</option>
+          <option value="general">General</option>
+        </select>
+
+        <label>
+          <input type="checkbox" id="include-refurbished" />
+          Include Refurbished Parts
+        </label>
+
+        <label for="source">Source:</label>
+        <select id="source" required>
+          <option value="online">Online</option>
+          <option value="offline">Offline (Local shop)</option>
+          <option value="mixed">Mixed</option>
+        </select>
+
+        <button type="submit">Get Suggestions</button>
+      </form>
+      <div id="budget-results"></div>
+    </section>
+
+    <aside id="cart-sidebar" class="collapsed">
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-summary">
+        <strong>Total: ₹<span id="cart-total">0</span></strong>
+      </div>
+      <button id="clear-cart">Clear Cart</button>
+    </aside>
+
+    <button id="toggle-filters" title="Toggle Filters Sidebar">&#9776;</button>
+    <button id="toggle-cart" title="Toggle Cart">&#128722;</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>
