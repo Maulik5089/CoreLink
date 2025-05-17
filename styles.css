@@ -1,134 +1,142 @@
 /* styles.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-    background: #0e0e0e;
-    color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #f1f1f1;
 }
 
 header {
-    background: linear-gradient(90deg, #6c5ce7, #00cec9, #fd79a8);
-    padding: 10px 20px;
-    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-.gemini-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
 }
 
-.gemini-nav h1 {
-    font-size: 1.8rem;
-    color: #fff;
-    flex: 1;
+nav button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-select, input[type="checkbox"] {
-    background: #1e1e1e;
-    color: #fff;
-    padding: 5px 10px;
-    border: 1px solid #555;
-    border-radius: 6px;
+nav button:hover {
+  background: #0072ff;
+  transform: scale(1.05);
 }
 
-main {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-    gap: 20px;
+.container {
+  display: flex;
+  margin: 1rem;
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-    flex: 3;
+.sidebar {
+  width: 250px;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
 }
 
-.product-card {
-    background: #1c1c1c;
-    border: 1px solid #333;
-    border-radius: 12px;
-    padding: 15px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.sidebar h3 {
+  margin-top: 0;
+  color: #00c6ff;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+.product-area {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
-.product-card img {
-    max-width: 100%;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 10px;
+.card {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.product-card h3 {
-    font-size: 1rem;
-    margin-bottom: 6px;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
-.product-card p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+.card img {
+  max-width: 100%;
+  height: 120px;
+  object-fit: contain;
 }
 
-.product-card button {
-    background: #00cec9;
-    color: #000;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.card h4 {
+  margin: 0.5rem 0 0.2rem;
+  color: #00c6ff;
 }
 
-.product-card button:hover {
-    background: #00bfa6;
+.card p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
 }
 
-.cart-sidebar {
-    background: #151515;
-    border-left: 1px solid #333;
-    padding: 20px;
-    border-radius: 12px;
-    width: 300px;
-    flex-shrink: 0;
-    height: 100%;
-    overflow-y: auto;
+.add-to-cart {
+  background-color: #0072ff;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  width: 100%;
 }
 
-#cart-container {
-    margin-top: 10px;
-    font-size: 0.9rem;
+.add-to-cart:hover {
+  background-color: #0052cc;
 }
 
-#cart-total {
-    font-size: 1.2rem;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #00cec9;
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
 }
 
-.warnings {
-    margin-top: 10px;
-    color: #ff7675;
-    font-size: 0.85rem;
+.cart.open {
+  display: block;
+}
+
+.cart h2 {
+  margin-top: 0;
+  color: #00c6ff;
+}
+
+.cart-item {
+  margin-bottom: 1rem;
+}
+
+.total-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
