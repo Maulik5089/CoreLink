@@ -1,81 +1,115 @@
-[
-  {
-    "id": "cpu1",
-    "name": "Intel Core i5-3470",
-    "type": "processor",
-    "brand": "Intel",
-    "socket": "LGA1155",
-    "condition": "refurbished",
-    "price": 1500,
-    "image": "images/intel_i5_3470.png",
-    "power": 77
-  },
-  {
-    "id": "cpu2",
-    "name": "Intel Core i5-10400F",
-    "type": "processor",
-    "brand": "Intel",
-    "socket": "LGA1200",
-    "condition": "new",
-    "price": 10499,
-    "image": "images/intel_i5_10400f.png",
-    "power": 65
-  },
-  {
-    "id": "mb1",
-    "name": "Consistent H61 Motherboard",
-    "type": "motherboard",
-    "socket": "LGA1155",
-    "supported_ram": "DDR3",
-    "nvme_support": false,
-    "condition": "refurbished",
-    "price": 1150,
-    "image": "images/h61_motherboard.png"
-  },
-  {
-    "id": "ram1",
-    "name": "HyperX 8GB DDR3 1600MHz",
-    "type": "ram",
-    "ram_type": "DDR3",
-    "capacity": "8GB",
-    "condition": "refurbished",
-    "price": 800,
-    "image": "images/hyperx_8gb_ddr3.png"
-  },
-  {
-    "id": "ssd1",
-    "name": "Zebronics 256GB NVMe SSD",
-    "type": "storage",
-    "interface": "NVMe",
-    "capacity": "256GB",
-    "condition": "new",
-    "price": 1450,
-    "image": "images/zebronics_nvme.png"
-  },
-  {
-    "id": "gpu1",
-    "name": "NVIDIA GT 730 2GB DDR5",
-    "type": "gpu",
-    "power": 25,
-    "condition": "refurbished",
-    "price": 2600,
-    "image": "images/gt_730.png"
-  },
-  {
-    "id": "psu1",
-    "name": "Circle 400W Power Supply",
-    "type": "psu",
-    "wattage": 400,
-    "condition": "new",
-    "price": 1000,
-    "image": "images/circle_400w.png"
-  },
-  {
-    "id": "cab1",
-    "name": "Zebronics Mid Tower Cabinet",
-    "type": "cabinet",
-    "condition": "new",
-    "price": 950,
-    "image": "images/zebronics_cabinet.png"
-  }
-]
+{
+  "processors": [
+    {
+      "id": "cpu1",
+      "name": "Intel Core i5-10400F",
+      "price": 12500,
+      "specs": "6 Cores, 12 Threads, 2.9GHz Base",
+      "socket": "LGA1200",
+      "condition": "new",
+      "image": "images/i5-10400f.jpg"
+    },
+    {
+      "id": "cpu2",
+      "name": "Intel Core i5-3470",
+      "price": 2200,
+      "specs": "4 Cores, 4 Threads, 3.2GHz",
+      "socket": "LGA1155",
+      "condition": "refurbished",
+      "image": "images/i5-3470.jpg"
+    }
+  ],
+  "motherboards": [
+    {
+      "id": "mb1",
+      "name": "Gigabyte H410M",
+      "price": 6200,
+      "specs": "Micro-ATX, LGA1200, DDR4",
+      "supportedSockets": ["LGA1200"],
+      "supportedRamTypes": ["DDR4"],
+      "condition": "new",
+      "image": "images/h410m.jpg"
+    },
+    {
+      "id": "mb2",
+      "name": "Consistent H61",
+      "price": 1150,
+      "specs": "ATX, LGA1155, DDR3",
+      "supportedSockets": ["LGA1155"],
+      "supportedRamTypes": ["DDR3"],
+      "condition": "refurbished",
+      "image": "images/h61.jpg"
+    }
+  ],
+  "ram": [
+    {
+      "id": "ram1",
+      "name": "Corsair Vengeance 8GB DDR4",
+      "price": 2200,
+      "specs": "DDR4, 3200MHz",
+      "type": "DDR4",
+      "condition": "new",
+      "image": "images/ddr4-8gb.jpg"
+    },
+    {
+      "id": "ram2",
+      "name": "Kingston 8GB DDR3",
+      "price": 1000,
+      "specs": "DDR3, 1600MHz",
+      "type": "DDR3",
+      "condition": "refurbished",
+      "image": "images/ddr3-8gb.jpg"
+    }
+  ],
+  "storage": [
+    {
+      "id": "storage1",
+      "name": "Zebronics 256GB NVMe",
+      "price": 1450,
+      "specs": "NVMe M.2 SSD",
+      "type": "NVMe",
+      "condition": "new",
+      "image": "images/zeb-nvme.jpg"
+    },
+    {
+      "id": "storage2",
+      "name": "WD Blue 500GB HDD",
+      "price": 900,
+      "specs": "3.5\", 7200RPM, SATA",
+      "type": "SATA",
+      "condition": "refurbished",
+      "image": "images/wd-hdd.jpg"
+    }
+  ],
+  "gpu": [
+    {
+      "id": "gpu1",
+      "name": "Zotac GT 1030",
+      "price": 5600,
+      "specs": "2GB GDDR5, Low Profile",
+      "condition": "new",
+      "image": "images/gt1030.jpg"
+    }
+  ],
+  "psu": [
+    {
+      "id": "psu1",
+      "name": "Corsair CV450",
+      "price": 2400,
+      "specs": "450W, 80+ Bronze",
+      "watts": 450,
+      "condition": "new",
+      "image": "images/cv450.jpg"
+    }
+  ],
+  "cabinets": [
+    {
+      "id": "cab1",
+      "name": "Zebronics Zeb-Cronus",
+      "price": 3200,
+      "specs": "ATX, RGB Fans",
+      "condition": "new",
+      "image": "images/zeb-cronus.jpg"
+    }
+  ]
+}
