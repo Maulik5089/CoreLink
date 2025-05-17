@@ -2,31 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CoreLink - PC Builder</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="navbar">
+  <header class="navbar">
     <h1>CoreLink</h1>
-    <div class="nav-tabs">
+    <nav class="nav-tabs">
       <button data-section="budget">Budget</button>
       <button data-section="processors">Processors</button>
       <button data-section="ram">RAM</button>
       <button data-section="storage">Storage</button>
       <button data-section="gpu">GPU</button>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="main-content">
+  <main class="main-container">
     <aside id="filters">
       <h3>Filters</h3>
       <p>(Coming Soon)</p>
     </aside>
-    <section id="content">
-      <p>Select a section above to start browsing.</p>
+    <section id="content" class="fade-in">
+      <p>Welcome to CoreLink. Choose a category to begin.</p>
     </section>
-  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CoreLink. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
