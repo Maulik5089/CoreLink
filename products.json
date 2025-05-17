@@ -1,40 +1,38 @@
 [
-    {
-        "id": "cpu1",
-        "name": "Intel Core i5 10400F",
-        "category": "CPU",
-        "price": 9000,
-        "condition": "new",
-        "socket": "LGA1200",
-        "specs": "6 cores, 12 threads, 2.9 GHz base",
-        "image": "images/cpu1.jpg"
-    },
-    {
-        "id": "mb1",
-        "name": "ASUS Prime B460M-A",
-        "category": "Motherboard",
-        "price": 7000,
-        "condition": "new",
-        "socket": "LGA1200",
-        "specs": "Micro ATX, DDR4, SATA, NVMe",
-        "image": "images/mb1.jpg"
-    },
-    {
-        "id": "ram1",
-        "name": "Corsair Vengeance LPX 8GB DDR4",
-        "category": "RAM",
-        "price": 3200,
-        "condition": "new",
-        "specs": "DDR4 3200MHz",
-        "image": "images/ram1.jpg"
-    },
-    {
-        "id": "ram2",
-        "name": "Kingston 8GB DDR3 Refurbished",
-        "category": "RAM",
-        "price": 1500,
-        "condition": "refurbished",
-        "specs": "DDR3 1600MHz",
-        "image": "images/ram2.jpg"
-    }
+  {
+    "id": "cpu1",
+    "name": "Intel Core i5 3470",
+    "category": "Processor",
+    "specs": "4 Cores, 3.2 GHz, LGA 1155",
+    "price": 1500,
+    "image": "intel_i5_3470.jpg",
+    "condition": "refurbished"
+  },
+  {
+    "id": "ram1",
+    "name": "Kingston 8GB DDR3",
+    "category": "RAM",
+    "specs": "DDR3, 1600MHz",
+    "price": 900,
+    "image": "kingston_8gb.jpg",
+    "condition": "new"
+  },
+  {
+    "id": "ssd1",
+    "name": "Zebronics 256GB NVMe",
+    "category": "Storage",
+    "specs": "NVMe M.2, 256GB",
+    "price": 1450,
+    "image": "zebronics_256gb.jpg",
+    "condition": "new"
+  },
+  {
+    "id": "mb1",
+    "name": "Consistent H61 Motherboard",
+    "category": "Motherboard",
+    "specs": "DDR3, LGA 1155, NVMe support",
+    "price": 1150,
+    "image": "consistent_h61.jpg",
+    "condition": "new"
+  }
 ]
