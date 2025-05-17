@@ -1,16 +1,122 @@
-
-{
-  "processors": [
-    { "name": "Intel i5 3470", "price": 1500, "specs": "3rd Gen, 4 cores" },
-    { "name": "AMD Ryzen 5 3600", "price": 11500, "specs": "6 cores, 12 threads" }
-  ],
-  "ram": [
-    { "name": "Corsair Vengeance 8GB DDR4", "price": 2500, "specs": "3200MHz" }
-  ],
-  "storage": [
-    { "name": "Zebronics 256GB NVMe", "price": 1450, "specs": "M.2 NVMe" }
-  ],
-  "gpus": [
-    { "name": "NVIDIA GT 1030", "price": 6000, "specs": "2GB GDDR5" }
-  ]
-}
+[
+  {
+    "id": "cpu001",
+    "category": "Processor",
+    "name": "Intel Core i5-10400F",
+    "specs": {
+      "cores": 6,
+      "threads": 12,
+      "baseClock": "2.9 GHz",
+      "socket": "LGA1200"
+    },
+    "price": 9500,
+    "condition": "new",
+    "image": "images/cpu_i5_10400f.png",
+    "power": 65
+  },
+  {
+    "id": "cpu002",
+    "category": "Processor",
+    "name": "Intel Core i5-3470",
+    "specs": {
+      "cores": 4,
+      "threads": 4,
+      "baseClock": "3.2 GHz",
+      "socket": "LGA1155"
+    },
+    "price": 3500,
+    "condition": "refurbished",
+    "image": "images/cpu_i5_3470.png",
+    "power": 77
+  },
+  {
+    "id": "mb001",
+    "category": "Motherboard",
+    "name": "ASUS Prime H510M-E",
+    "specs": {
+      "socket": "LGA1200",
+      "ramType": "DDR4",
+      "maxRAM": "64GB"
+    },
+    "price": 6800,
+    "condition": "new",
+    "image": "images/mb_asus_h510m.png"
+  },
+  {
+    "id": "mb002",
+    "category": "Motherboard",
+    "name": "Gigabyte GA-H61M-DS2",
+    "specs": {
+      "socket": "LGA1155",
+      "ramType": "DDR3",
+      "maxRAM": "16GB"
+    },
+    "price": 1200,
+    "condition": "refurbished",
+    "image": "images/mb_gigabyte_h61m.png"
+  },
+  {
+    "id": "ram001",
+    "category": "RAM",
+    "name": "Corsair Vengeance LPX 8GB DDR4",
+    "specs": {
+      "type": "DDR4",
+      "speed": "3200 MHz",
+      "capacity": "8GB"
+    },
+    "price": 2800,
+    "condition": "new",
+    "image": "images/ram_corsair_8gb.png"
+  },
+  {
+    "id": "ram002",
+    "category": "RAM",
+    "name": "Kingston 8GB DDR3",
+    "specs": {
+      "type": "DDR3",
+      "speed": "1600 MHz",
+      "capacity": "8GB"
+    },
+    "price": 1300,
+    "condition": "refurbished",
+    "image": "images/ram_kingston_8gb.png"
+  },
+  {
+    "id": "gpu001",
+    "category": "GPU",
+    "name": "NVIDIA GTX 1660 Super",
+    "specs": {
+      "vram": "6GB",
+      "tdp": 125
+    },
+    "price": 19000,
+    "condition": "new",
+    "image": "images/gpu_gtx_1660_super.png",
+    "power": 125
+  },
+  {
+    "id": "psu001",
+    "category": "PSU",
+    "name": "Corsair CX550M 550W",
+    "specs": {
+      "wattage": 550,
+      "modular": "Semi"
+    },
+    "price": 4200,
+    "condition": "new",
+    "image": "images/psu_corsair_cx550m.png"
+  },
+  {
+    "id": "storage001",
+    "category": "Storage",
+    "name": "Samsung 970 EVO 500GB NVMe",
+    "specs": {
+      "type": "NVMe",
+      "capacity": "500GB",
+      "readSpeed": "3500 MB/s"
+    },
+    "price": 6000,
+    "condition": "new",
+    "image": "images/storage_samsung_970evo.png"
+  }
+]
