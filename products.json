@@ -1,122 +1,81 @@
 [
   {
-    "id": "cpu001",
-    "category": "Processor",
-    "name": "Intel Core i5-10400F",
-    "specs": {
-      "cores": 6,
-      "threads": 12,
-      "baseClock": "2.9 GHz",
-      "socket": "LGA1200"
-    },
-    "price": 9500,
-    "condition": "new",
-    "image": "images/cpu_i5_10400f.png",
-    "power": 65
-  },
-  {
-    "id": "cpu002",
-    "category": "Processor",
+    "id": "cpu1",
     "name": "Intel Core i5-3470",
-    "specs": {
-      "cores": 4,
-      "threads": 4,
-      "baseClock": "3.2 GHz",
-      "socket": "LGA1155"
-    },
-    "price": 3500,
+    "type": "processor",
+    "brand": "Intel",
+    "socket": "LGA1155",
     "condition": "refurbished",
-    "image": "images/cpu_i5_3470.png",
+    "price": 1500,
+    "image": "images/intel_i5_3470.png",
     "power": 77
   },
   {
-    "id": "mb001",
-    "category": "Motherboard",
-    "name": "ASUS Prime H510M-E",
-    "specs": {
-      "socket": "LGA1200",
-      "ramType": "DDR4",
-      "maxRAM": "64GB"
-    },
-    "price": 6800,
+    "id": "cpu2",
+    "name": "Intel Core i5-10400F",
+    "type": "processor",
+    "brand": "Intel",
+    "socket": "LGA1200",
     "condition": "new",
-    "image": "images/mb_asus_h510m.png"
+    "price": 10499,
+    "image": "images/intel_i5_10400f.png",
+    "power": 65
   },
   {
-    "id": "mb002",
-    "category": "Motherboard",
-    "name": "Gigabyte GA-H61M-DS2",
-    "specs": {
-      "socket": "LGA1155",
-      "ramType": "DDR3",
-      "maxRAM": "16GB"
-    },
-    "price": 1200,
+    "id": "mb1",
+    "name": "Consistent H61 Motherboard",
+    "type": "motherboard",
+    "socket": "LGA1155",
+    "supported_ram": "DDR3",
+    "nvme_support": false,
     "condition": "refurbished",
-    "image": "images/mb_gigabyte_h61m.png"
+    "price": 1150,
+    "image": "images/h61_motherboard.png"
   },
   {
-    "id": "ram001",
-    "category": "RAM",
-    "name": "Corsair Vengeance LPX 8GB DDR4",
-    "specs": {
-      "type": "DDR4",
-      "speed": "3200 MHz",
-      "capacity": "8GB"
-    },
-    "price": 2800,
-    "condition": "new",
-    "image": "images/ram_corsair_8gb.png"
-  },
-  {
-    "id": "ram002",
-    "category": "RAM",
-    "name": "Kingston 8GB DDR3",
-    "specs": {
-      "type": "DDR3",
-      "speed": "1600 MHz",
-      "capacity": "8GB"
-    },
-    "price": 1300,
+    "id": "ram1",
+    "name": "HyperX 8GB DDR3 1600MHz",
+    "type": "ram",
+    "ram_type": "DDR3",
+    "capacity": "8GB",
     "condition": "refurbished",
-    "image": "images/ram_kingston_8gb.png"
+    "price": 800,
+    "image": "images/hyperx_8gb_ddr3.png"
   },
   {
-    "id": "gpu001",
-    "category": "GPU",
-    "name": "NVIDIA GTX 1660 Super",
-    "specs": {
-      "vram": "6GB",
-      "tdp": 125
-    },
-    "price": 19000,
+    "id": "ssd1",
+    "name": "Zebronics 256GB NVMe SSD",
+    "type": "storage",
+    "interface": "NVMe",
+    "capacity": "256GB",
     "condition": "new",
-    "image": "images/gpu_gtx_1660_super.png",
-    "power": 125
+    "price": 1450,
+    "image": "images/zebronics_nvme.png"
   },
   {
-    "id": "psu001",
-    "category": "PSU",
-    "name": "Corsair CX550M 550W",
-    "specs": {
-      "wattage": 550,
-      "modular": "Semi"
-    },
-    "price": 4200,
-    "condition": "new",
-    "image": "images/psu_corsair_cx550m.png"
+    "id": "gpu1",
+    "name": "NVIDIA GT 730 2GB DDR5",
+    "type": "gpu",
+    "power": 25,
+    "condition": "refurbished",
+    "price": 2600,
+    "image": "images/gt_730.png"
   },
   {
-    "id": "storage001",
-    "category": "Storage",
-    "name": "Samsung 970 EVO 500GB NVMe",
-    "specs": {
-      "type": "NVMe",
-      "capacity": "500GB",
-      "readSpeed": "3500 MB/s"
-    },
-    "price": 6000,
+    "id": "psu1",
+    "name": "Circle 400W Power Supply",
+    "type": "psu",
+    "wattage": 400,
     "condition": "new",
-    "image": "images/storage_samsung_970evo.png"
+    "price": 1000,
+    "image": "images/circle_400w.png"
+  },
+  {
+    "id": "cab1",
+    "name": "Zebronics Mid Tower Cabinet",
+    "type": "cabinet",
+    "condition": "new",
+    "price": 950,
+    "image": "images/zebronics_cabinet.png"
   }
 ]
