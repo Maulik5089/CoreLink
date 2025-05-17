@@ -1,42 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CoreLink - PC Builder</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoreLink - Build Your PC</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <nav class="gemini-nav">
-            <h1>CoreLink</h1>
-            <select id="category-filter" aria-label="Filter by category"></select>
-            <label>
-                <input type="checkbox" id="condition-toggle" /> Include Refurbished
-            </label>
-            <select id="budget-filter" aria-label="Filter by budget">
-                <option value="all">All Budgets</option>
-                <option value="5000-10000">₹5,000–₹10,000</option>
-                <option value="11000-25000">₹11,000–₹25,000</option>
-                <option value="26000-50000">₹26,000–₹50,000</option>
-                <option value="51000-1000000">₹51,000+</option>
-            </select>
-        </nav>
-    </header>
-
-    <main>
-        <section id="product-container" class="products-grid">
-            <!-- Product cards load here dynamically -->
-        </section>
-
-        <aside class="cart-sidebar">
-            <h2>Build Cart (<span id="cart-count">0</span>)</h2>
-            <div id="cart-container"></div>
-            <div id="compatibility-warnings" class="warnings"></div>
-            <div id="cart-total">Total: ₹0</div>
-        </aside>
-    </main>
-
-    <script src="script.js"></script>
-</body>
+  <header class="top-nav">
+    <h1>CoreLink</h1>
+    <nav>
+      <a href="#processors">Processors</a>
+      <a href="#ram">RAM</a>
+      <a href="#storage">Storage</a>
+      <a href="#gpu">GPU</a>
+      <a href="budget.html">Budget Builder</a>
+    </nav>
+  </header>  <aside class="sidebar">
+    <button id="toggleSidebar">Toggle Filters</button>
+    <div class="filters">
+      <label><input type="checkbox" id="refurbishedToggle" /> Include Refurbished</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="Processor">Processors</option>
+        <option value="RAM">RAM</option>
+        <option value="Storage">Storage</option>
+        <option value="GPU">GPU</option>
+      </select>
+    </div>
+  </aside>  <main id="productContainer"></main>  <div id="cartSidebar">
+    <h2>Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: ₹<span id="totalPrice">0</span></p>
+  </div>  <script src="script.js"></script></body>
 </html>
