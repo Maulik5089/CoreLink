@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoreLink</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <h1>CoreLink</h1>
+    <div class="nav-tabs">
+      <button onclick="showSection('processors')">Processors</button>
+      <button onclick="showSection('ram')">RAM</button>
+      <button onclick="showSection('storage')">Storage</button>
+      <button onclick="showSection('gpus')">GPUs</button>
+      <button onclick="showSection('budget')">Budget Builds</button>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div id="filters">Filters will go here</div>
+    <div id="content">Welcome to CoreLink. Select a tab to view products.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

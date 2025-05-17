@@ -1,0 +1,16 @@
+
+{
+  "processors": [
+    { "name": "Intel i5 3470", "price": 1500, "specs": "3rd Gen, 4 cores" },
+    { "name": "AMD Ryzen 5 3600", "price": 11500, "specs": "6 cores, 12 threads" }
+  ],
+  "ram": [
+    { "name": "Corsair Vengeance 8GB DDR4", "price": 2500, "specs": "3200MHz" }
+  ],
+  "storage": [
+    { "name": "Zebronics 256GB NVMe", "price": 1450, "specs": "M.2 NVMe" }
+  ],
+  "gpus": [
+    { "name": "NVIDIA GT 1030", "price": 6000, "specs": "2GB GDDR5" }
+  ]
+}
