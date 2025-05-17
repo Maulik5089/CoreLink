@@ -1,37 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CoreLink - PC Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoreLink – Build Your PC</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="navbar">
-    <h1>CoreLink</h1>
-    <nav class="nav-tabs">
-      <button data-section="budget">Budget</button>
-      <button data-section="processors">Processors</button>
-      <button data-section="ram">RAM</button>
-      <button data-section="storage">Storage</button>
-      <button data-section="gpu">GPU</button>
-    </nav>
-  </header>
-
-  <main class="main-container">
-    <aside id="filters">
+  <div class="navbar">
+    <div class="logo">CoreLink</div>
+    <div class="nav-tabs">
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('budget')">Budget Build</button>
+      <button onclick="showSection('Processors')">Processors</button>
+      <button onclick="showSection('RAM')">RAM</button>
+      <button onclick="showSection('Storage')">Storage</button>
+      <button onclick="showSection('GPU')">GPU</button>
+      <button onclick="showSection('Cart')">Cart</button>
+    </div>
+  </div>  <div class="main-content">
+    <div id="filters">
       <h3>Filters</h3>
-      <p>(Coming Soon)</p>
-    </aside>
-    <section id="content" class="fade-in">
-      <p>Welcome to CoreLink. Choose a category to begin.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 CoreLink. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+      <label><input type="checkbox" id="refurbishedToggle" onchange="applyFilters()"> Include Refurbished</label><br>
+      <label><input type="checkbox" id="compatibilityToggle" onchange="applyFilters()"> Show Compatible Only</label>
+    </div>
+    <div id="content">
+      <!-- Dynamic Content Goes Here -->
+    </div>
+  </div>  <script src="script.js"></script></body>
 </html>
